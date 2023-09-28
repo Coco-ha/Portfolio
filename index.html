@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"> Co Ha</div>
+    <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Co Ha</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/about.jpg" alt="" style="border-radius: 10px;">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm </p>
+      <h1 class="title">Co Ha</h1>
+      <p class="section__text__p2">Software Developer with a love for healthcare, technology, and everything in between</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon" onclick="location.href='https:www.linkedin.com/in/co-ha-4a27a3293/'">
+        <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https:Github.com/coco-ha'">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Co_Profile.jpg" alt="Profile Picture" class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="experience icon" class="icon">
+            <div><h3>Experience  </h3></div>
+            <h4 class="date-string">2023</h4>
+            <h4>Full-stack Software Engineer Intern
+               <br> <p>SIS internship</p></h4>
+            <h4 class="date-string">2019-2021</h4>
+            <h4>Biochemistry Research Intern
+               <br> <p>UTA</p></h4>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="education icon" class="icon">
+            <h3>Education</h3>
+            <h4 class="date-string">2021</h4>
+            <h4>Bachelor of Science in Biology</h4>
+            <h4 class="date-string">2022</h4>
+            <h4>Masters of Science in Biomedical Science</h4>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I'm a full-stack software engineer with a background in healthcare and bio-chemistry sciences. My journey is quite a long and twisted route. I first intended to go to college in pursuit of becoming a physcian, I soon reached my goal by being accepted into medical school after completing my Masters, but my interest in software development kept me from continuing this route. The thought of pursuing software came during my time as a biochemistry research intern at The University of Texas Arlington, I studied F420 Cofactor enzymes and processed data using spectrophotometry and other equipment. I was fascinated with the abundant amount of equipment and software that allowed us to be capable of studying tiny enzymes that our eyes and hands couldn't possible grasp. I quickly became curious as to how these equipment and software was built. Curiosity allowed me to plunge head-first into the world of software engineering, with the intent of oneday gaining the skills and knowledge to contribute to incredible software that can impact the abundant world of STEM. </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-containers">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+
+          <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>HTML</h3>
+
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>CSS</h3>
+
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Javascript</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Typescript</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>jQuery</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>React</h3>
+
+            </div>
+          </article>
+        </div>
+      </div>
+        <div class="details-containers">
+          <h2 class="experience-sub-title">Backend Development</h2>
+
+          <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Python</h3>
+
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>PostgreSQL</h3>
+
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Git</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Flask</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Express JS</h3>
+
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+            <div>
+              <h3>Django</h3>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse my Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/warbler.jpg" alt="Project 1" class="project-img">
+
+        </div>
+        <h2 class="experience-sub-title project-title">Warbler</h2>
+        <h4>Description: Replica of a social media site, where users can follow other users and post/like messages.</h4>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com/Coco-ha/Warbler-cxh'">
+            GitHub
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:warbler-cxh12.onrender.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+
+        </div>
+        <h2 class="experience-sub-title project-title">React Pixly</h2>
+          <h4>Description: Uploads Image and stores metadata of photo (location of photo, mode, of camera, etc) and store it into the database</h4>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com/Coco-ha/react-pixly'">
+            GitHub
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/jobly.jpg" alt="Project 3" class="project-img">
+
+        </div>
+        <h2 class="experience-sub-title project-title">Jobly</h2>
+        <h4>Description: Job listing single page React application for viewing and submitting job applications.</h4>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:github.com/Coco-ha/jobly-cxh'">
+            GitHub
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https:co-reactjoblyr32.surge.sh'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="contacts">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+        <p><a href="mailto:co.ha1408@gmail.com">co.ha1408@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+        <p><a href="https:www.linkedin.com/in/co-ha-4a27a3293/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Co Ha. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
